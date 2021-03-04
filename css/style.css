@@ -310,21 +310,20 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border: 2px solid transparent;
   color: var(--white);
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  transition: border-color .1s ease-out;
 }
 
 .dropdown__menu-item:hover {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: var(--purple-dark);
-  transition: outline .3s linear
+  border-color: var(--purple-dark);
 }
 
 .dropdown__menu-item:active {
-  background-image: linear-gradient(to top, rgba(121, 67, 164, 0.3), rgba(121, 67, 164, 0.3));
+  background-color: linear-gradient(to top, rgba(121, 67, 164, 0.3), rgba(121, 67, 164, 0.3));
 }
 
 .dropdown__menu-item:not(:last-child) {
@@ -497,10 +496,26 @@ body {
 =========== */
 .swiper-container {
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
   height: 800px;
+  animation: scaleIntroBg 20s ease-in-out infinite;
+}
+
+@keyframes scaleIntroBg {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  0% {
+    transform: scale(1);
+  }
 }
 
 .swiper-slide {
@@ -567,83 +582,9 @@ body {
   color: var(--black-light);
 }
 
-.section__title--white {
-  color: var(--white)
-}
-
 .section__text {
   font-size: 16px;
   line-height: 2;
   font-weight: 400;
   max-width: 1080px;
-}
-
-/* Gallery
-============== */
-.section--gallery {
-  position: relative;
-  padding-bottom: 30px;
-  background-color: rgba(0, 0, 0, .7);
-}
-
-.section--gallery::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background: url('/assets/img/gallery/gallery-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%); 
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section__col--gallery {
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.gallery__slider-btn {
-  outline: 2px solid red;
-  height: 80px;
-}
-
-.gallery__list {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1153px;
-}
-
-.gallery__item {
-  cursor: pointer;
-  position: relative;
-  width: 350px;
-  height: 350px;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-
-.gallery__item:not(:nth-child(3n)) {
-  margin-right: 50px;
-}
-
-.gallery__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  width: 100%;
-  transform: translate3d(-50%, -50%, 0);
-}
-
-.gallery__img--height {
-  height: 350px;
 }

@@ -26,10 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
           dropDownBtn.blur();
         }
       });
-
-      dropDownMenuItem.forEach(function(e) {
-        e.style.backgroundColor = 'rgba(0, 0, 0, .2)';
-      });
     });
   }
 
