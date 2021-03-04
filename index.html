@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/simplebar.css">
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/simplebar.js"></script>
+  <script defer src="/js/app.js"></script>
+  <title>Blanchard - художественная галерея</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner header__inner--top">
+          <a href="/index.html" class="header__link">
+            <img src="/assets/img/logo.png" alt="Blanchard-художественная галерея" class="header__logo">
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Галерея</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">События</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Издания</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Проекты</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__login-link">
+            <svg class="header__login-icon">
+              <use xlink:href="/assets/img/sprites.svg#login"></use>
+            </svg>
+            Войти
+          </a>
+        </div>
+      </div><!-- /.container -->
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__inner header__inner--bottom">
+          <ul class="header__dropdown-list">
+            <li class="header__dropdown-item">
+              <button class="header__dropdown-btn">Реализм</button>
+              <ul class="dropdown__menu">
+                <li tabindex="0" class="dropdown__menu-item dropdown--realism-1">Тинторетто</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--realism-2">Фридрих</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--realism-3">Леонардо</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--realism-4">Верроккьо</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--realism-4">Верроккьо</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--realism-4">Верроккьо</li>
+              </ul>
+            </li>
+            <li class="header__dropdown-item">
+              <button class="header__dropdown-btn">Импрессионизм</button>
+              <ul class="dropdown__menu">
+                <li tabindex="0" class="dropdown__menu-item dropdown--impress-1">Моне</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--impress-2">Сислей</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--impress-3">Мане</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--impress-4">Ренуар</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--impress-4">Ренуар</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--impress-4">Ренуар</li>
+              </ul>
+            </li>
+            <li class="header__dropdown-item">
+              <button class="header__dropdown-btn">Постимпрессионизм</button>
+              <ul class="dropdown__menu">
+                <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-1">Ван Гог</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-2">Сезанн</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-3">Гоген</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-4">Сёра</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-4">Сёра</li>
+              </ul>
+            </li>
+            <li class="header__dropdown-item">
+              <button class="header__dropdown-btn">Авангард</button>
+              <ul class="dropdown__menu">
+                <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-1">Кандинский</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-2">Маринетти</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-3">Малевич</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-4">Пикассо</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-4">Пикассо</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-4">Пикассо</li>
+              </ul>
+            </li>
+            <li class="header__dropdown-item">
+              <button class="header__dropdown-btn">Футуризм</button>
+              <ul class="dropdown__menu">
+                <li tabindex="0" class="dropdown__menu-item dropdown--future-1">Карра</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--future-2">Прателла</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--future-3">Северини</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--future-4">Балла</li>
+                <li tabindex="0" class="dropdown__menu-item dropdown--future-4">Балла</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="header__search">
+            <button class="header__search-btn" aria-label="Найти" type="button">
+              <svg class="header__search-icon">
+                <use xlink:href="/assets/img/sprites.svg#search"></use>
+              </svg>  
+            </button>
+            <input class="header__search-input" type="text" placeholder="Поиск по сайту">
+          </div>
+        </div><!-- /.header__inner -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <main>
+    <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+        <h1 class="intro__title">Прикоснитесь к прекрасному</h1>
+        <p class="intro__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+        <div class="outline">
+          <button class="btn btn--full" type="submit">Подписаться на рассылку</button>
+        </div>
+        </div>
+      </div><!-- /.container -->
+    </div><!-- /.intro -->
+    <!-- About us -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">О нас</h2>
+        <p class="section__text">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="section section--gallery">
+      <div class="container">
+        <div class="gallery">
+          <div class="section__col">
+            <h2 class="section__title section__title--white">Галерея</h2>
+          </div>
+          <div class="section__col section__col--gallery">
+            <div class="gallery__slider-btn" style="color: aliceblue;">
+              Кнопки сладера
+            </div>
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <img class="gallery__img" src="/assets/img/gallery/gallery-1.jpg" alt="">
+              </li>
+              <li class="gallery__item">
+                <img class="gallery__img" src="/assets/img/gallery/gallery-2.jpg" alt="">
+              </li>
+              <li class="gallery__item">
+                <img class="gallery__img gallery__img--height" src="/assets/img/gallery/gallery-3.jpg" alt="">
+              </li>
+              <li class="gallery__item">
+                <img class="gallery__img" src="/assets/img/gallery/gallery-4.jpg" alt="">
+              </li>
+              <li class="gallery__item">
+                <img class="gallery__img" src="/assets/img/gallery/gallery-5.jpg" alt="">
+              </li>
+              <li class="gallery__item">
+                <img class="gallery__img" src="/assets/img/gallery/gallery-6.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+</body>
+
+</html>
