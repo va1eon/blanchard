@@ -210,7 +210,7 @@ body {
   margin-right: 0;
 }
 
-.header__dropdown-btn.header__dropdown-btn--active {
+.header__dropdown-btn--active {
   color: var(--purple-dark);
   outline: none;
 }
@@ -257,6 +257,7 @@ body {
 .dropdown__menu {
   display: none;
   position: absolute;
+  z-index: 1;
   top: 45px;
   left: 0;
   width: 300px;
@@ -318,106 +319,34 @@ body {
   transition: border-color .1s ease-out;
 }
 
-.dropdown__menu-item:hover {
-  border-color: var(--purple-dark);
+.dropdown__menu-item:after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  transition: opacity .1s ease-out;
+} 
+
+.dropdown__menu-item:active::after {
+  opacity: 1;
 }
 
-.dropdown__menu-item:active {
-  background-color: linear-gradient(to top, rgba(121, 67, 164, 0.3), rgba(121, 67, 164, 0.3));
+.dropdown__menu-item:hover {
+  border-color: var(--purple-dark);
 }
 
 .dropdown__menu-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* Realism */
-.dropdown--realism-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-1.jpg');
-}
-
-.dropdown--realism-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-2.jpg');
-}
-
-.dropdown--realism-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-3.jpg');
-}
-
-.dropdown--realism-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-4.jpg');
-}
-
-/* Impress */
-.dropdown--impress-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-1.jpg');
-}
-
-.dropdown--impress-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-2.jpg');
-}
-
-.dropdown--impress-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-3.jpg');
-}
-
-.dropdown--impress-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-4.jpg');
-}
-
-/* Postimpress */
-.dropdown--postimpress-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-1.jpg');
-}
-
-.dropdown--postimpress-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-2.jpg');
-}
-
-.dropdown--postimpress-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-3.jpg');
-}
-
-.dropdown--postimpress-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-4.jpg');
-}
-
-/* Vanguard */
-.dropdown--vanguard-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-1.jpg');
-}
-
-.dropdown--vanguard-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-2.jpg');
-}
-
-.dropdown--vanguard-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-3.jpg');
-}
-
-.dropdown--vanguard-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-4.jpg');
-}
-
-/* Future */
-.dropdown--future-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-1.jpg');
-}
-
-.dropdown--future-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-2.jpg');
-}
-
-.dropdown--future-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-3.jpg');
-}
-
-.dropdown--future-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-4.jpg');
-}
-
 .header__search {
   display: flex;
   margin-top: 6px;
+  margin-right: 3px;
 }
 
 .header__search:hover .header__search-btn{
@@ -435,7 +364,7 @@ body {
 }
 
 .header__search-btn{
-  margin-right: 13px;
+  margin-right: 10px;
   fill: var(--white);
   transition: fill .1s ease-out;
 }
