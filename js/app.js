@@ -74,8 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
       loop: true,
       effect: 'fade',
-      slidesPerView: 3,
-      speed: 1000,
+      speed: 1500,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
