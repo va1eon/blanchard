@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/simplebar.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/normalize.min.css">
   <link rel="stylesheet" href="/css/style.css">
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="/js/simplebar.js"></script>
   <script defer src="/js/app.js"></script>
   <title>Blanchard - художественная галерея</title>
@@ -46,7 +48,7 @@
               </li>
             </ul>
           </nav>
-          <a href="#" class="header__login-link">
+          <a href="#" class="header__login-link" aria-label="Войти в личный кабинет">
             <svg class="header__login-icon">
               <use xlink:href="/assets/img/sprites.svg#login"></use>
             </svg>
@@ -60,7 +62,7 @@
         <div class="header__inner header__inner--bottom">
           <ul class="header__dropdown-list">
             <li class="header__dropdown-item">
-              <button class="header__dropdown-btn">Реализм</button>
+              <button class="header__dropdown-btn" aria-label="выподающий список">Реализм</button>
               <ul class="dropdown__menu">
                 <li tabindex="0" class="dropdown__menu-item dropdown--realism-1">Тинторетто</li>
                 <li tabindex="0" class="dropdown__menu-item dropdown--realism-2">Фридрих</li>
@@ -71,7 +73,7 @@
               </ul>
             </li>
             <li class="header__dropdown-item">
-              <button class="header__dropdown-btn">Импрессионизм</button>
+              <button class="header__dropdown-btn" aria-label="выподающий список">Импрессионизм</button>
               <ul class="dropdown__menu">
                 <li tabindex="0" class="dropdown__menu-item dropdown--impress-1">Моне</li>
                 <li tabindex="0" class="dropdown__menu-item dropdown--impress-2">Сислей</li>
@@ -82,7 +84,7 @@
               </ul>
             </li>
             <li class="header__dropdown-item">
-              <button class="header__dropdown-btn">Постимпрессионизм</button>
+              <button class="header__dropdown-btn" aria-label="выподающий список">Постимпрессионизм</button>
               <ul class="dropdown__menu">
                 <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-1">Ван Гог</li>
                 <li tabindex="0" class="dropdown__menu-item dropdown--postimpress-2">Сезанн</li>
@@ -92,7 +94,7 @@
               </ul>
             </li>
             <li class="header__dropdown-item">
-              <button class="header__dropdown-btn">Авангард</button>
+              <button class="header__dropdown-btn" aria-label="выподающий список">Авангард</button>
               <ul class="dropdown__menu">
                 <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-1">Кандинский</li>
                 <li tabindex="0" class="dropdown__menu-item dropdown--vanguard-2">Маринетти</li>
@@ -103,7 +105,7 @@
               </ul>
             </li>
             <li class="header__dropdown-item">
-              <button class="header__dropdown-btn">Футуризм</button>
+              <button class="header__dropdown-btn header__dropdown-btn--last" aria-label="выподающий список">Футуризм</button>
               <ul class="dropdown__menu">
                 <li tabindex="0" class="dropdown__menu-item dropdown--future-1">Карра</li>
                 <li tabindex="0" class="dropdown__menu-item dropdown--future-2">Прателла</li>
@@ -127,15 +129,22 @@
   </header>
   <main>
     <div class="intro">
-      <div class="container">
-        <div class="intro__inner">
-        <h1 class="intro__title">Прикоснитесь к прекрасному</h1>
-        <p class="intro__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-        <div class="outline">
-          <button class="btn btn--full" type="submit">Подписаться на рассылку</button>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide intro-img-1"></div>
+          <div class="swiper-slide intro-img-2"></div>
+          <div class="swiper-slide intro-img-3"></div>
         </div>
-        </div>
-      </div><!-- /.container -->
+        <div class="container container--absolute">
+          <div class="intro__inner">
+          <h1 class="intro__title">Прикоснитесь к прекрасному</h1>
+          <p class="intro__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+          <div class="outline">
+            <button class="btn btn--full" type="submit">Подписаться на рассылку</button>
+          </div>
+          </div>
+        </div><!-- /.container -->
+      </div>
     </div><!-- /.intro -->
     <!-- About us -->
     <section class="section">
@@ -146,42 +155,6 @@
         </p>
       </div>
     </section>
-    <!-- Gallery -->
-    <section class="section section--gallery">
-      <div class="container">
-        <div class="gallery">
-          <div class="section__col">
-            <h2 class="section__title section__title--white">Галерея</h2>
-          </div>
-          <div class="section__col section__col--gallery">
-            <div class="gallery__slider-btn" style="color: aliceblue;">
-              Кнопки сладера
-            </div>
-            <ul class="gallery__list">
-              <li class="gallery__item">
-                <img class="gallery__img" src="/assets/img/gallery/gallery-1.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="/assets/img/gallery/gallery-2.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img gallery__img--height" src="/assets/img/gallery/gallery-3.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="/assets/img/gallery/gallery-4.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="/assets/img/gallery/gallery-5.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="/assets/img/gallery/gallery-6.jpg" alt="">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    
   </main>
 </body>
 

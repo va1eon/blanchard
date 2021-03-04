@@ -99,7 +99,7 @@ body {
   margin: 0 auto;
 }
 
-/* Outline */
+/* Outline to btn */
 .outline {
   display: inline-block;
   padding: 3px;
@@ -204,6 +204,10 @@ body {
   font-size: 18px;
   font-weight: 400;
   transition: color .1s ease-out
+}
+
+.header__dropdown-btn--last {
+  margin-right: 0;
 }
 
 .header__dropdown-btn.header__dropdown-btn--active {
@@ -329,87 +333,87 @@ body {
 
 /* Realism */
 .dropdown--realism-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-realism/realism-1.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-1.jpg');
 }
 
 .dropdown--realism-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-realism/realism-2.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-2.jpg');
 }
 
 .dropdown--realism-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-realism/realism-3.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-3.jpg');
 }
 
 .dropdown--realism-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-realism/realism-4.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-realism/realism-4.jpg');
 }
 
 /* Impress */
 .dropdown--impress-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-impress/impress-1.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-1.jpg');
 }
 
 .dropdown--impress-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-impress/impress-2.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-2.jpg');
 }
 
 .dropdown--impress-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-impress/impress-3.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-3.jpg');
 }
 
 .dropdown--impress-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-impress/impress-4.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-impress/impress-4.jpg');
 }
 
 /* Postimpress */
 .dropdown--postimpress-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-1.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-1.jpg');
 }
 
 .dropdown--postimpress-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-2.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-2.jpg');
 }
 
 .dropdown--postimpress-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-3.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-3.jpg');
 }
 
 .dropdown--postimpress-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-4.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-postimpress/postimpress-4.jpg');
 }
 
 /* Vanguard */
 .dropdown--vanguard-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-1.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-1.jpg');
 }
 
 .dropdown--vanguard-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-2.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-2.jpg');
 }
 
 .dropdown--vanguard-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-3.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-3.jpg');
 }
 
 .dropdown--vanguard-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-4.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-vanguard/vanguard-4.jpg');
 }
 
 /* Future */
 .dropdown--future-1 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-future/future-1.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-1.jpg');
 }
 
 .dropdown--future-2 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-future/future-2.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-2.jpg');
 }
 
 .dropdown--future-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-future/future-3.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-3.jpg');
 }
 
 .dropdown--future-4 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/img/dropdowns/dropdown-future/future-4.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/img/dropdowns/dropdown-future/future-4.jpg');
 }
 
 .header__search {
@@ -491,11 +495,38 @@ body {
 
 /* Intro
 =========== */
-.intro {
-  background: transparent url('/assets/img/intro/intro-bg-1.jpg');
+.swiper-container {
+  position: relative;
+}
+
+.swiper-wrapper {
+  height: 800px;
+}
+
+.swiper-slide {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.intro-img-1 {
+  background-image: url('/assets/img/intro/intro-bg-1.jpg');
+}
+
+.intro-img-2 {
+  background-image: url('/assets/img/intro/intro-bg-2.jpg');
+}
+
+.intro-img-3 {
+  background-image: url('/assets/img/intro/intro-bg-3.jpg');
+}
+
+.container--absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .intro__inner {

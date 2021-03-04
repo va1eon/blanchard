@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
         searchInput.value = '';
         searchButton.style.fill = '';
         searchInput.classList.remove('header__search-input--nonfocus');
+        searchInput.blur();
       }
     });
 
@@ -69,6 +70,20 @@ document.addEventListener('DOMContentLoaded', function () {
         searchButton.style.fill = '';
         searchInput.classList.remove('header__search-input--nonfocus');
       }
+    });
+  }
+
+  // Swiper
+  function sliderIntro() {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      effect: 'fade',
+      slidesPerView: 3,
+      speed: 1000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
     });
   }
 
@@ -91,5 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
   headerDropDown();
   customScroll();
   headerSearch();
+  sliderIntro();
   outlineBtn();
 });
