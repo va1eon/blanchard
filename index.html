@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="/js/simplebar.js"></script>
+  <script defer src="/js/dynamicAdapt.js"></script>
   <script defer src="/js/app.js"></script>
   <title>Blanchard - художественная галерея</title>
 </head>
@@ -159,7 +160,7 @@
               </ul>
             </li>
           </ul>
-            <form  class="header__search" method="GET" action="/">
+            <form  class="header__search" method="GET" action="/" data-da=".header__inner--top, 1229, last">
               <button class="header__search-btn" type="button" aria-label="Найти">
                 <svg class="header__search-icon">
                   <use xlink:href="/assets/img/sprites.svg#search"></use>
@@ -173,7 +174,7 @@
   </header>
   <main>
     <!-- Intro -->
-    <div class="intro">
+    <section class="intro">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide intro-img-1"></div>
@@ -190,7 +191,7 @@
           </div>
         </div><!-- /.container -->
       </div><!-- /.swiper-container -->
-    </div><!-- /.intro -->
+    </section><!-- /.intro -->
     <!-- About us -->
     <section class="section">
       <div class="container">
